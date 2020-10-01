@@ -39,7 +39,7 @@ def button_equ():
     else:
         messagebox.showerror("error", "Invalid Expression")
 
-def button_plus(n):
+def plus(n):
     e.insert(END,n)
 
 def button_minus(n):
@@ -57,7 +57,7 @@ def button_modulo(n):
 Button_clear = tkinter.Button(window, text="CE", bg="black", fg="White", padx=14,pady=6,bd=8,font=("Arial",16,"bold"), command=button_clear)
 Button_backspace = tkinter.Button(window, text="C", bg="black", fg="White", padx=20,pady=6,bd=8,font=("Arial",16,"bold"), command=button_backspace)
 Button_equ = tkinter.Button(window, text="=", bg="green", fg="White",padx=20,pady=3,bd=8,font=("Arial",18,"bold"), command= button_equ)
-Button_plus = tkinter.Button(window, text="+",  bg="orange", fg="black",padx=16,pady=3,bd=8,font=("Arial",18,"bold"), command=lambda: button_plus("+"))
+plus = tkinter.Button(window, text="+",  bg="orange", fg="black",padx=16,pady=3,bd=8,font=("Arial",18,"bold"), command=lambda: button_plus("+"))
 
 Button_7 = tkinter.Button(window, text="7", bg="Red", fg="White", padx=16,pady=8,bd=8,font=("Arial",22,"bold"), command=lambda: button_click(7))
 Button_8 = tkinter.Button(window, text="8", bg="Red", fg="White", padx=16,pady=8,bd=8,font=("Arial",22,"bold"), command=lambda: button_click(8))
@@ -85,7 +85,7 @@ Button_modulo = tkinter.Button(window, text="%",  bg="orange", fg="black",padx=1
 Button_clear.grid(row=1, column=1)
 Button_backspace.grid(row=1, column=2)
 Button_equ.grid(row=1, column=3)
-Button_plus.grid(row=1, column=4)
+plus.grid(row=1, column=4)
 
 Button_1.grid(row=4, column=1)
 Button_2.grid(row=4, column=2)
